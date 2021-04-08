@@ -1,0 +1,6 @@
+# Wavetable
+```javascript
+
+```
+
+## Factory Method

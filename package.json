@@ -1,0 +1,40 @@
+{
+  "name": "SonicArrayJS",
+  "version": "1.0.0",
+  "description": "A data sonification library extending the native JavaScript Array.",
+  "main": "src/index.js",
+  "author": "Takahiko Tsuchiya",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "ava": "^2.2.0",
+    "browser-env": "^3.2.6",
+    "eslint": "^7.16.0",
+    "esm": "^3.2.25",
+    "rollup-plugin-copy": "^3.0.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "vuepress": "^1.0.3"
+  },
+  "scripts": {
+    "all": "npm run build && npm run test",
+    "build": "rollup -c",
+    "test": "ava --verbose"
+  },
+  "ava": {
+    "files": [
+      "test/**/*"
+    ],
+    "sources": [
+      "src/**/*"
+    ],
+    "require": [
+      "esm",
+      "./test/_setup-browser-env.js"
+    ]
+  },
+  "dependencies": {}
+}

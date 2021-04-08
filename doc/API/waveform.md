@@ -1,0 +1,6 @@
+# Waveform
+```javascript
+
+```
+
+## Factory Method
